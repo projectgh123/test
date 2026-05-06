@@ -58,15 +58,19 @@ nav a:hover {
   text-align: center;
 }
 
-/* FOTO PROFILE */
+/* FOTO PROFILE (FIX UTAMA DI SINI) */
 .profile {
   width: 160px;
+  height: 160px;          /* FIX */
   border-radius: 50%;
+  object-fit: cover;      /* FIX */
+  display: block;
   border: 3px solid #38bdf8;
   box-shadow: 0 0 30px #38bdf8;
   transition: 0.4s;
 }
 
+/* efek hover */
 .profile:hover {
   transform: scale(1.1);
   box-shadow: 0 0 60px #38bdf8;
@@ -123,5 +127,6 @@ canvas {
 
   .profile {
     width: 120px;
+    height: 120px;   /* FIX RESPONSIVE */
   }
 }
